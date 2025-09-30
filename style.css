@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+}
+
+@font-face {
+  font-family: 'Transformers';
+  src: url('./fonts/Transformers\ Movie.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url("images/Ai_SpaceCybertron_Background.png") no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    color:#fff;
+    
+}
+
+
+/*Containter of top bar*/
+.navbar{
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    gap: 2rem;
+    padding: 0 50px;
+}
+
+/*The Cybertron Archive text */
+#navbar_statement{
+    background-color: #ff2828;
+    background: linear-gradient(to top, #b4ecff 0%, #ff0000 45%, #b4ecff 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    font-family: Transformers;
+    text-decoration: none;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-align: left;
+}
+
+/* Makes the navbar items horizontal */
+.navbar_menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+/* Edits the text of the navbar items */
+.navbar_links{
+    font-size: 1.5rem;
+    color: #fff;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 2rem;
+    height: 100%;
+    text-align: right;
+}
+
+.navbar_links:hover{
+    color: #ff1900;
+    transition: all 0.3s ease;
+}
+
+/* adds padding to the side of the search bar so the spacing is between about and the search box, not about and the search text */
+.navbar_search{
+    padding: 0 2rem;;
+}
+
+
+.navbar_search_btn{
+    color: #fff;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-decoration: none;
+    /* padding: 0 1rem; */
+    height: 100%;
+    text-align: right;
+    /* curve of the button corners */
+    border-radius: 4px;
+    /* width/height of the button box */
+    padding: 10px 20px;
+    background: #ff1900;
+    font-size: 1.5rem;
+    position: relative; 
+    z-index: 1;
+    overflow: hidden; /* keeps animation inside rounded corners */
+}
+
+.navbar_search_btn:hover{
+   color: #fff;
+}
+
+.navbar_search_btn:after{
+position: absolute;
+content: '';
+top: 0;
+left: 0;
+width: 0;
+height: 100%;
+background: #000dfc;
+transition: all 0.35s;
+border-radius: 4px;
+/* keeps animation under Search text */
+z-index: -1; 
+
+}
+
+.navbar_search_btn:hover:after{
+    width: 100%;
+}
+
+/* Edits the Opitmus Prime text in navbar */
+#OptimusText{
+    font-family: Transformers;
+    font-size: 2rem;
+    background-color: #ff1100;
+    background-image: linear-gradient(to top, #000dfc 0%, #ff0000 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-text-stroke: .5px #fff;
+}
+
+.main_content{
+    padding: 2rem 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.main_header span{
+    font-family: Transformers;
+}
+
+.The{
+    background-color: #ff2828;
+    background: linear-gradient(to top, #fff 0%, #5c5c5c 45%, #fff 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+.Trans{
+    background-color: #ff1100;
+    background-image: linear-gradient(to top, #ff0000 0%, #fff 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+.formers{
+    background-color: #ff1100;
+    background-image: linear-gradient(to top, #fff 0%, #9d00ff 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+
